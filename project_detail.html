@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Geospatial API Services - Project Detail</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#eff1f3",
+              "error": "#ba1a1a",
+              "surface-container-low": "#f2f4f6",
+              "primary-container": "#1d3557",
+              "secondary-fixed-dim": "#98cdf2",
+              "on-secondary-fixed": "#001e2e",
+              "tertiary-fixed-dim": "#9ecfd1",
+              "surface-dim": "#d8dadc",
+              "on-tertiary-fixed": "#002021",
+              "surface-tint": "#485f84",
+              "tertiary-container": "#003b3d",
+              "outline": "#74777f",
+              "outline-variant": "#c4c6cf",
+              "on-error-container": "#93000a",
+              "secondary": "#2b6485",
+              "secondary-fixed": "#c7e7ff",
+              "on-primary-fixed": "#001b3c",
+              "surface-variant": "#e0e3e5",
+              "background": "#f7f9fb",
+              "surface-container": "#eceef0",
+              "on-secondary-container": "#255f80",
+              "on-primary-fixed-variant": "#30476a",
+              "surface-container-high": "#e6e8ea",
+              "on-background": "#191c1e",
+              "on-primary": "#ffffff",
+              "inverse-primary": "#b0c7f1",
+              "on-secondary-fixed-variant": "#064c6b",
+              "on-tertiary-container": "#75a5a7",
+              "tertiary": "#002425",
+              "primary-fixed": "#d5e3ff",
+              "on-error": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "surface": "#f7f9fb",
+              "surface-container-lowest": "#ffffff",
+              "on-surface-variant": "#44474e",
+              "on-primary-container": "#879ec6",
+              "surface-bright": "#f7f9fb",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed-variant": "#1a4e50",
+              "tertiary-fixed": "#b9ecee",
+              "secondary-container": "#a3d8fe",
+              "on-surface": "#191c1e",
+              "surface-container-highest": "#e0e3e5",
+              "primary": "#031f41",
+              "primary-fixed-dim": "#b0c7f1",
+              "inverse-surface": "#2d3133"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .tonal-shift-surface-container-low {
+        background-color: rgba(242, 244, 246, 0.7);
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 dark:bg-[#031f41]/70 backdrop-blur-xl no-border tonal-shift-surface-container-low">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="active:scale-95 duration-200 hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-[#031f41] dark:text-[#a3d8fe]">arrow_back</span>
+</button>
+<span class="text-xl font-extrabold text-[#031f41] dark:text-white uppercase tracking-tighter font-headline">The Digital Scholar</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#191c1e] dark:text-slate-300 hover:opacity-80 transition-opacity font-bold font-headline" href="#">Home</a>
+<a class="text-[#2b6485] dark:text-[#a3d8fe] font-bold font-headline" href="#">Projects</a>
+<a class="text-[#191c1e] dark:text-slate-300 hover:opacity-80 transition-opacity font-bold font-headline" href="#">Resume</a>
+<a class="text-[#191c1e] dark:text-slate-300 hover:opacity-80 transition-opacity font-bold font-headline" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#031f41] dark:text-[#a3d8fe] cursor-pointer">share</span>
+<span class="material-symbols-outlined text-[#031f41] dark:text-[#a3d8fe] cursor-pointer">open_in_new</span>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 mb-16">
+<div class="grid lg:grid-cols-2 gap-12 items-end">
+<div>
+<span class="inline-block py-1 px-3 bg-secondary-container text-on-secondary-container rounded-full text-xs font-bold tracking-widest uppercase mb-6 font-label">Backend Architecture</span>
+<h1 class="text-5xl md:text-7xl font-extrabold font-headline text-primary tracking-tight leading-[1.1] mb-6">
+                        Geospatial API Services
+                    </h1>
+<p class="text-xl md:text-2xl text-secondary font-medium leading-relaxed max-w-xl">
+                        Robust Backend Infrastructure for Surveying Data
+                    </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 mb-2 lg:justify-end">
+<a class="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary to-primary-container text-white rounded-md font-bold text-sm tracking-wide shadow-lg shadow-primary/10 hover:opacity-90 transition-all active:scale-95" href="#">
+                        View Live Project
+                        <span class="material-symbols-outlined ml-2 text-sm">rocket_launch</span>
+</a>
+<a class="inline-flex items-center justify-center px-8 py-4 border border-outline-variant/30 text-secondary rounded-md font-bold text-sm tracking-wide hover:bg-surface-container-low transition-all active:scale-95" href="#">
+                        View Code on GitLab
+                        <span class="material-symbols-outlined ml-2 text-sm">code</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Large Showcase Section -->
+<section class="mb-24 px-6 overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="relative rounded-xl overflow-hidden shadow-2xl shadow-primary/5 group">
+<img alt="Geospatial API Visualization" class="w-full h-[500px] md:h-[700px] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High-tech interface displaying complex geospatial mapping data, satellite topographic overlays, and code snippets in a dark blue futuristic theme" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIwNQPLjQj2BlcUnyuIx2BcqdofNnY_6IeCFu2-zbYOfiGzafdaA9VHOsz64GIG8_Xb6MHCvzB3-gMXmZQFRcg8W7P9LCbBs-S7zBqfPW03AJofEVbUIbB7Ic57zTvYWQv0KT7EiMPLdT46qvJbHvbyKs974X1xsp246v8tDXpGbXSpfsONEPklEdLK2iR2k73HD-9KatIgG58Xe9O-WQSePvmtIud_re-WUCOEe8H3b4vrJfJfd-IB1_zJlB-EKvvzLiGRjdHckY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent pointer-events-none"></div>
+</div>
+</div>
+</section>
+<!-- Project Overview & Tech Stack -->
+<section class="max-w-7xl mx-auto px-6 mb-24">
+<div class="grid lg:grid-cols-12 gap-16">
+<!-- Left: Overview -->
+<div class="lg:col-span-8">
+<h2 class="text-3xl font-extrabold font-headline text-primary mb-8 tracking-tight">Project Overview</h2>
+<div class="prose prose-lg max-w-none text-on-surface-variant leading-relaxed space-y-6">
+<p class="text-xl">
+                            To streamline development for Arctic Carbon Tech's ERP modules, I developed a high-performance backend using Go and PostGIS. The system acts as the central intelligence hub for processing large-scale environmental surveying datasets, ensuring precision and reliability in spatial calculations.
+                        </p>
+</div>
+<div class="mt-16 bg-surface-container-low p-8 md:p-12 rounded-xl border-l-4 border-secondary">
+<h3 class="text-xl font-bold font-headline text-primary mb-6">Key Features</h3>
+<ul class="grid md:grid-cols-2 gap-6">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-0.5">query_stats</span>
+<div>
+<span class="font-bold block text-primary">Complex SQL queries</span>
+<span class="text-sm text-on-surface-variant">Optimized procedural logic for multi-table joins.</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-0.5">map</span>
+<div>
+<span class="font-bold block text-primary">PostGIS integrations</span>
+<span class="text-sm text-on-surface-variant">Seamless spatial data indexing and geometric operations.</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-0.5">speed</span>
+<div>
+<span class="font-bold block text-primary">Sub-second latency</span>
+<span class="text-sm text-on-surface-variant">Highly efficient concurrent request handling in Go.</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-0.5">architecture</span>
+<div>
+<span class="font-bold block text-primary">Scalable architecture</span>
+<span class="text-sm text-on-surface-variant">Modular design ready for horizontal expansion.</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<!-- Right: Meta Info -->
+<div class="lg:col-span-4 space-y-12">
+<div>
+<h3 class="text-xs font-bold font-label text-on-surface-variant tracking-[0.2em] uppercase mb-6">Technology Stack</h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full text-sm font-bold font-label">Go</span>
+<span class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full text-sm font-bold font-label">PostgreSQL</span>
+<span class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full text-sm font-bold font-label">PostGIS</span>
+<span class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full text-sm font-bold font-label">GitLab</span>
+</div>
+</div>
+<div>
+<h3 class="text-xs font-bold font-label text-on-surface-variant tracking-[0.2em] uppercase mb-4">Project Context</h3>
+<div class="space-y-4">
+<div class="flex justify-between border-b border-outline-variant/20 pb-2">
+<span class="text-on-surface-variant font-medium">Client</span>
+<span class="text-primary font-bold">Arctic Carbon Tech</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/20 pb-2">
+<span class="text-on-surface-variant font-medium">Industry</span>
+<span class="text-primary font-bold">Environmental ERP</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/20 pb-2">
+<span class="text-on-surface-variant font-medium">Role</span>
+<span class="text-primary font-bold">Backend Engineer</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Challenges & Solutions Section -->
+<section class="bg-primary py-24 text-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="order-2 lg:order-1">
+<h2 class="text-3xl font-extrabold font-headline mb-8 tracking-tight">Challenges &amp; Solutions</h2>
+<div class="space-y-12 relative">
+<div class="pl-8 relative">
+<div class="absolute left-0 top-0 h-full w-[2px] bg-secondary opacity-30"></div>
+<h4 class="text-xl font-bold font-headline mb-4 text-secondary-fixed">The Technical Hurdle</h4>
+<p class="text-on-primary-container leading-relaxed">
+                                    Performing real-time distance calculations across millions of GPS coordinates was causing significant memory spikes and timing out frontend requests during peak surveying seasons.
+                                </p>
+</div>
+<div class="pl-8 relative">
+<div class="absolute left-0 top-0 h-full w-[2px] bg-secondary opacity-100"></div>
+<h4 class="text-xl font-bold font-headline mb-4 text-on-secondary-container">The Architectural Solution</h4>
+<p class="text-on-primary-container leading-relaxed">
+                                    I implemented a GIST (Generalized Search Tree) indexing strategy within PostGIS and refactored the Go service to utilize a worker-pool pattern. This decoupled the ingestion of data from the computation layer, reducing memory consumption by 60% and ensuring sub-second response times even under heavy load.
+                                </p>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<div class="bg-white/5 backdrop-blur-sm p-1 rounded-2xl border border-white/10 shadow-inner">
+<div class="p-6 md:p-10 space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[#031f41]">analytics</span>
+</div>
+<h4 class="text-lg font-bold">Performance Impact</h4>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-primary-container p-4 rounded-xl">
+<span class="block text-2xl font-extrabold text-secondary-fixed">92%</span>
+<span class="text-xs uppercase tracking-widest font-label opacity-70">Query Speedup</span>
+</div>
+<div class="bg-primary-container p-4 rounded-xl">
+<span class="block text-2xl font-extrabold text-secondary-fixed">0ms</span>
+<span class="text-xs uppercase tracking-widest font-label opacity-70">Data Loss</span>
+</div>
+</div>
+<p class="text-sm italic opacity-60 font-body">
+                                    "The backend infrastructure remained stable during our largest field campaign to date, processing over 500 requests per second with zero downtime."
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 max-w-7xl mx-auto px-6 text-center">
+<h2 class="text-3xl font-extrabold font-headline text-primary mb-6">Interested in the architecture?</h2>
+<p class="text-on-surface-variant mb-10 max-w-xl mx-auto">
+                Discover the full implementation details and technical documentation on my GitLab repository or view the live ERP dashboard.
+            </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<a class="inline-flex items-center justify-center px-10 py-5 bg-primary text-white rounded-md font-bold text-base tracking-wide shadow-xl shadow-primary/20 hover:scale-[1.02] transition-transform active:scale-95" href="#">
+                    Explore Codebase
+                </a>
+<a class="inline-flex items-center justify-center px-10 py-5 bg-secondary-container text-on-secondary-container rounded-md font-bold text-base tracking-wide hover:scale-[1.02] transition-transform active:scale-95" href="#">
+                    Live Demo
+                </a>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-6 left-1/2 -translate-x-1/2 flex justify-around items-center z-50 w-[90%] max-w-md bg-[#f7f9fb]/80 dark:bg-[#031f41]/90 backdrop-blur-lg rounded-full px-2 py-2 shadow-xl shadow-[#191c1e]/10 no-border">
+<a class="flex flex-col items-center justify-center text-[#2b6485] dark:text-slate-400 p-3 hover:bg-slate-200/50 dark:hover:bg-white/10 rounded-full transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="hidden font-['Inter'] text-[10px] uppercase tracking-[0.1em] font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#031f41] dark:bg-[#a3d8fe] text-white dark:text-[#031f41] rounded-full p-3 active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="hidden font-['Inter'] text-[10px] uppercase tracking-[0.1em] font-bold">Projects</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#2b6485] dark:text-slate-400 p-3 hover:bg-slate-200/50 dark:hover:bg-white/10 rounded-full transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">description</span>
+<span class="hidden font-['Inter'] text-[10px] uppercase tracking-[0.1em] font-bold">Resume</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#2b6485] dark:text-slate-400 p-3 hover:bg-slate-200/50 dark:hover:bg-white/10 rounded-full transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">mail</span>
+<span class="hidden font-['Inter'] text-[10px] uppercase tracking-[0.1em] font-bold">Contact</span>
+</a>
+</nav>
+</body></html>
